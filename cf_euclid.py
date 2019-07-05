@@ -29,7 +29,7 @@ def get_sim(person1, person2):
     if len(both)==0:
         return 0
 
-    #ユークリッド互除法
+    #ユークリッド距離
     list_des = [pow(dataset[person1][item]-dataset[person2][item], 2) for item in both]
     return 1/(1+sqrt(sum(list_des)))
 
